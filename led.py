@@ -25,13 +25,14 @@ def main():
         if  flare % 3 == 0:
             blink(greenPin)
 
-        if  flare % 3 == 0:
+        if  flare % 4 == 0:
             blink(bluePin)
 
         time.sleep(1)
         turnOff(redPin)
         turnOff(greenPin)
         turnOff(bluePin)
+        flare += 1
 
 if __name__ == "__main__":
      main()
