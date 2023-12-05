@@ -38,21 +38,21 @@ def main():
 
         x += sin_x * 0.1
         y += sin_y * 0.3
-        z += sin_z * 0.001
+        z += sin_z * 0.5
 
-        if x > 100:
+        if x > 99:
             sin_x = -1
-        elif x < 0:
+        elif x < 1:
             sin_x = 1
         
-        if y > 100:
+        if y > 99:
             sin_y = -1
-        elif y < 0:
+        elif y < 1:
             sin_y = 1
 
-        if z > 100:
+        if z > 99:
             sin_z = -1
-        elif z < 0:
+        elif z < 1:
             sin_z = 1
 
         time.sleep(0.01)      
