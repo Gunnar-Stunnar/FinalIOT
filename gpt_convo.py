@@ -39,9 +39,9 @@ def set_fan_speed(fan_speed):
 def set_Living_Room_RGB_LED_Color(r,g,b):
     print()
     print(f"SET COLOR: * r: {r} g: {g} b:{b} *")
-    RED.ChangeDutyCycle(r)
-    GREEN.ChangeDutyCycle(g)
-    BLUE.ChangeDutyCycle(b)
+    RED.ChangeDutyCycle(r * 100/255)
+    GREEN.ChangeDutyCycle(g * 100/255)
+    BLUE.ChangeDutyCycle(b * 100/255)
     return {"success": True}
 
 
