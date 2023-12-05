@@ -55,7 +55,7 @@ def main():
         elif z < 1:
             sin_z = 1
 
-        time.sleep(0.01)      
+        time.sleep(0.0001)      
 
 if __name__ == "__main__":
     try:
